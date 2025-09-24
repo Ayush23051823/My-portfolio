@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayush Kumar — Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="sticky-header">
+    <div class="brand">
+      <div class="logo">AK</div>
+      <div>
+        <h1>Ayush Kumar</h1>
+        <p>Full-stack Developer • Problem Solver</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card contact-card">
+      <h3>Contact Me</h3>
+      <p class="muted">Send a message or email me — I’ll get back within a few days.</p>
+      <form onsubmit="handleContact(event)">
+        <div class="contact-form">
+          <input class="input" type="text" name="name" placeholder="Your Name" required>
+          <input class="input" type="email" name="email" placeholder="Your Email" required>
+          <input class="input" type="text" name="subject" placeholder="Subject" style="grid-column:1 / -1">
+          <textarea name="message" placeholder="Message..." required></textarea>
+        </div>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Ayush Kumar • Built with ♥</div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
